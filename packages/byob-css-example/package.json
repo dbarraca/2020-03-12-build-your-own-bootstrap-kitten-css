@@ -1,5 +1,5 @@
 {
-  "name": "kitten-example",
+  "name": "byob-css-example",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Monarch Wadia",
@@ -9,7 +9,7 @@
     "build": "parcel build index.html --public-url '.' --no-autoinstall --out-dir ../../docs"
   },
   "dependencies": {
-    "kitten": "*"
+    "byob-css": "*"
   },
   "devDependencies": {
     "parcel-bundler": "1.12.3"

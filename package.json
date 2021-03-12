@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "cd packages/kitten-example && yarn start",
-    "build": "cd packages/kitten-example && yarn build"
+    "start": "cd packages/byob-css-example && yarn start",
+    "build": "cd packages/byob-css-example && yarn build"
   }
 }
