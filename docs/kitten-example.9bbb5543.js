@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"normalize.css":"OAcZ"}],"Focm":[function(require,module,exports) {
 "use strict";require("kitten");
 },{"kitten":"V+fH"}]},{},["Focm"], null)
-//# sourceMappingURL=/kitten-example.9bbb5543.js.map
+//# sourceMappingURL=kitten-example.9bbb5543.js.map
