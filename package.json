@@ -1,0 +1,14 @@
+{
+  "name": "build-your-own-bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Monarch Wadia",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "cd packages/kitten-example && yarn start"
+  }
+}

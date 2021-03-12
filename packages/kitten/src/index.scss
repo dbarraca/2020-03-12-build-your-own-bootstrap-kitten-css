@@ -1,0 +1,46 @@
+@import "normalize.css";
+@import "./variables";
+@import "./calculated";
+
+html {
+  font-size: $font-size-baseline;
+}
+
+h1 {
+  color: mix($color-primary, $color-secondary, 0%);
+  font-size: 3rem;
+}
+
+h2 {
+  color: mix($color-primary, $color-secondary, 20%);
+  font-size: 2.4rem;
+}
+
+h3 {
+  color: mix($color-primary, $color-secondary, 40%);
+  font-size: 2rem;
+}
+h4 {
+  color: mix($color-primary, $color-secondary, 60%);
+  font-size: 1.65rem;
+}
+h5 {
+  color: mix($color-primary, $color-secondary, 80%);
+  font-size: 1.5rem;
+}
+h6 {
+  color: mix($color-primary, $color-secondary, 100%);
+  font-size: 1.25rem;
+}
+
+.card {
+  border: 2px solid #2d2d2d;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+  }
+}

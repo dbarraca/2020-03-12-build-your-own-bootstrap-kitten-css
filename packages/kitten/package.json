@@ -1,0 +1,13 @@
+{
+  "name": "kitten",
+  "version": "1.0.0",
+  "main": "src/index.scss",
+  "author": "Monarch Wadia",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
