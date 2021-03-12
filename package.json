@@ -9,6 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "cd packages/kitten-example && yarn start"
+    "start": "cd packages/kitten-example && yarn start",
+    "build": "cd packages/kitten-example && yarn build"
   }
 }

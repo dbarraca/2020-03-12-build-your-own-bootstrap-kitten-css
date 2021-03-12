@@ -5,7 +5,8 @@
   "author": "Monarch Wadia",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve index.html --no-autoinstall"
+    "start": "parcel serve index.html --no-autoinstall",
+    "build": "parcel build index.html --no-autoinstall --out-dir ../../docs"
   },
   "dependencies": {
     "kitten": "*"
