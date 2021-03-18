@@ -1,6 +1,3 @@
-import "byob-css";
-
-
 let compCode = document.querySelectorAll('code');
 
 compCode.forEach((code) => {

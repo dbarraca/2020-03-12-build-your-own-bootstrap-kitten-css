@@ -8,13 +8,19 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="kitten-example.adbff444.css" rel="stylesheet">
+
+
+
 
     <style>
-      .flx-rw div {
-        padding: 1rem;
-        background-color: #21affa;
-        margin: 1rem;
+
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
       }
 
       #ScreenshotTemp {
@@ -34,17 +40,76 @@
         max-width: 100%;
       }
 
-      section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 3rem;
+      #ScreenshotTemp {
+        background-color:#DDD;
+        border-radius: .1rem 1rem;
+        border-radius: .15rem 1rem;
+        width: 80rem;
+        height: 25rem;
+        max-width: 100%;
       }
 
+      .CreatorImg {
+        background-color:#DDD;
+        border-radius: 1rem;
+        height: 25rem;
+        width: 20rem;
+        max-width: 100%;
+      }
+
+      .content {
+        display: flex;
+        /* // flex-flow: row wrap; */
+        flex-flow: row;
+        margin: 0 auto;  
+        padding: 5rem 0;
+        max-width: 1200px;
+      }
+
+      .content-text {
+        padding-right: 4rem;
+        max-width: 40rem;
+        font-size: 1.5rem;
+      }
+
+      .content-text h1 {
+        font-size: 4rem;
+      }
+
+      .content-text p {
+        margin-top: 2rem;
+        margin-right: 3rem;
+        min-width: 30rem;
+      }
+      
       .componentsContainer {
         max-width: 1060px;
         width: 100%;
+      }
+
+      .comp h3 ::before {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 25%;
+        background-color:#21affa;
+        display: block;
+      }
+
+      .comp h3 {
+        font-weight: bold;
+      }
+
+      .comp h4 {
+        font-weight: 600;
+      }
+
+      .comp h3, .comp h4 {
+        /* margin: 2rem; */
+        margin: 2rem .5rem 1rem;
       }
 
       .comp {
@@ -57,27 +122,42 @@
         border: 1px solid #EEE;
         padding: 2rem;
         background-color: #FFF;
+        display: flex;
+        justify-content: center;
       }
 
       .comp-details {
         margin: 1rem;
-        margin-top: 4rem;
+        /* margin-top: 4rem; */
       }
 
       .comp-code {
         padding: 1rem;
         border-radius: .5rem;
-        background-color: #F0F0F0;
+        background-color: rgba(0,0,0,.04);
+        color: mediumblue;
       }
+
+      .flx-rw div, .flx-cl div,
+      .flx-rw-rv div, .flx-cl-rv div {
+        padding: 1rem;
+        background-color: #21affa;
+        margin: 1rem;
+        border-radius: .5rem;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+
     </style>
     
     
   </head>
   <body>
-    <!--  class="fixed" -->
-    <header>
-      <a href="#" class="brand">Voila</a>
-      <nav>
+    <header class="hdr">
+      <a href="#" class="brnd">Voila</a>
+      <nav class="nv">
         <ul>
           <li><a href="#ATF">Home</a></li>
           <li><a href="#Explainer">Explanation</a></li>
@@ -96,9 +176,11 @@
 
           <p>Voila is a CSS framework that will quickly cook up your next project.</p>
 
-          <button class="btn-grad">Get started</button>
+          <!-- <button class="btn-grad">Get started</button> -->
           <a class="btn-grad" href="https://github.com/dbarraca" target="_blank">GitHub</a>
-          <button class="btn-grad">Download</button>
+          <a href="kitten-example.adbff444.css" download>
+            <button class="btn-outline">Download</button>
+          </a>
         </div>
 
         <div id="ScreenshotTemp" ></div>
@@ -112,13 +194,8 @@
           <h2>Explanation</h2>
 
           <p>
-            Voila is a css framework with ready made components. You just need to include the css file.
-            
-            The fil
-            found in the <a href="#KitchenSink">kitchen sink</a> section below. You simply need 
-            to add the needed class to create the component. We like to keep things short and 
-            sweet. The classes are common class names used in other css frameworks with the 
-            vowels removed.Just like that you will be yelling out "Voila!" as you look upon the
+            Voila is a css framework with ready made components. You simply need to include the css file and add the needed class to create each component. 
+            The available components can be found in the <a href="#KitchenSink">kitchen sink</a> section below. Just like that you will be yelling out "Voila!" as you look upon the
           beautiful website you have created. 
           </p>
         </div>
@@ -150,12 +227,12 @@
 
       <div class="componentsContainer">
         <div class="comp">
+          <h3>Headers</h3>
           <div class="comp-example">
-            <!-- class="fixed" -->
             <div class="code">
-              <header>
-                <a href="#" class="brand">brand</a>
-                <nav>
+              <header class="hdr">
+                <a href="#" class="brnd">brand</a>
+                <nav class="nv">
                   <ul>
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
@@ -173,10 +250,9 @@
           <div class="comp-code">
             <pre>
               <code class="language-html" data-lang="html">
-                <!-- class="fixed -->
-<header>
-  <a href="#" class="brand">brand</a>
-  <nav>
+<header class="hdr">
+  <a href="#" class="brnd">brand</a>
+  <nav class="nv">
     <ul>
       <li><a href="#">Link 1</a></li>
       <li><a href="#">Link 2</a></li>
@@ -194,65 +270,155 @@
 
 
         <div class="comp">
-          <div class="comp-example">
-          </div>
-          <div class="comp-details">
-            ordered lists
-          </div>
-          <pre>
-            <code class="language-html" data-lang="html">
-            </code>
-          </pre>
-        </div>
+          <h3>Ordered lists</h3>
 
-        <div class="comp">
           <div class="comp-example">
-            <ul class="ul">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <ol class="ol">
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ol>
           </div>
           <div class="comp-details">
-            unordered lists
+            <p>Ordered lists</p>
           </div>
           <div class="comp-code">
             <pre>
               <code class="language-html" data-lang="html">
-
+<ol class="ol">
+  <li>List Item</li>
+  <li>List Item</li>
+  <li>List Item</li>
+</ol>
               </code>
             </pre>
           </div>
         </div>
 
         <div class="comp">
-          <h3>Flex</h3>
+          <h3>Unordered Lists</h3>
+          <div class="comp-example">
+            <ul class="ul circle">
+              <li class="circle">List Item</li>
+              <li class="circle">List Item</li>
+              <li class="circle">List Item</li>
+            </ul>
+          </div>
+          <div class="comp-details">
+            <p>Unordered Lists</p>
+          </div>
+          <div class="comp-code">
+            <pre>
+              <code class="language-html" data-lang="html">
+<ul class="ul">
+  <li>List Item</li>
+  <li>List Item</li>
+  <li>List Item</li>
+</ul>
+              </code>
+            </pre>
+          </div>
+        </div>
 
-          <h4>Flex row</h4>
+        <div class="comp">
+          <h3>Flex Containers</h3>
+
+          <h4>Flex Row</h4>
           <div class="comp-example">
             <div class="flx-rw">
-              <div>div</div>
-              <div>div</div>
-              <div>div</div>
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
             </div>
           </div>
           <div class="comp-details">
-            Flex row
+            Flex Row
           </div>
           <div class="comp-code">
             <pre>
               <code class="language-html" data-lang="html">
 <div class="flx-rw">
-  <div>div</div>
-  <div>div</div>
-  <div>div</div>
+  <div>div 1</div>
+  <div>div 2</div>
+  <div>div 3</div>
 </div>
+              </code>
+            </pre>
+          </div>
+       
+ 
+          <h4>Flex Row Reverse</h4>
+          <div class="comp-example">
+            <div class="flx-rw-rv">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+          <div class="comp-details">
+            Flex Row Reverse
+          </div>
+          <div class="comp-code">
+            <pre>
+              <code class="language-html" data-lang="html">
+  <div class="flx-rw-rv">
+  <div>div 1</div>
+  <div>div 2</div>
+  <div>div 3</div>
+  </div>
+              </code>
+            </pre>
+          </div>
+
+          <h4>Flex Column</h4>
+          <div class="comp-example">
+            <div class="flx-cl">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+          <div class="comp-details">
+            <p>Flex Column</p>
+          </div>
+          <div class="comp-code">
+            <pre>
+              <code class="language-html" data-lang="html">
+<div class="flx-cl">
+  <div>div 1</div>
+  <div>div 2</div>
+  <div>div 3</div>
+</div>
+              </code>
+            </pre>
+          </div>
+
+          <h4>Flex Column Reverse</h4>
+          <div class="comp-example">
+            <div class="flx-rw-rv">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+          <div class="comp-details">
+            Flex Column Reverse
+          </div>
+          <div class="comp-code">
+            <pre>
+              <code class="language-html" data-lang="html">
+  <div class="flx-cl-rv">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+  </div>
               </code>
             </pre>
           </div>
         </div>
           
+
+
         <div class="comp">
           <div class="comp-example">
           </div>
@@ -282,11 +448,12 @@
         </div>
 
         <div class="comp">
+          <h3>Buttons</h3>
           <div class="comp-example">
             <button class="btn-grad">buton</button>
           </div>
           <div class="comp-details">
-            buttons
+            Buttons with a gradient background.
           </div>
           <div class="comp-code">
             <pre>
@@ -326,23 +493,14 @@
     <section id="Customization">
       <div class="content">
         <div class="content-text">
-          <h2>Customization</h2>
+          <h2>How to customize</h2>
 
           <p>Made to order.</p>
         </div>
       </div>
     </section>
 
-    <script>
-        let compCode = document.querySelectorAll('code');
+    <script src="index.js"></script>
     
-        compCode.forEach((code) => {
-        //   console.log(code);
-          let replaced = code.innerHTML.replaceAll('<','&lt;').replaceAll('>','&gt;');
-          code.innerHTML = replaced;
-        });
-    </script>
   </body>
-
-
 </html>
