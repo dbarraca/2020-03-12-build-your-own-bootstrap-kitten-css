@@ -22,11 +22,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: center;
-  // max-width: 1000px;
+  // justify-content: center;
   padding: 0 2rem;
   margin: 0 auto;
-  // font-size: 1.2rem;
   padding: 0;
   width: 100%;
   max-width: 1280px;
@@ -49,12 +47,13 @@ body {
   border-bottom: 1px solid mix($color-primary, $color-shade, 80%);
   margin-bottom: .75rem;
   padding: 0;
+  flex: 1;
 }
 
 .nv ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   margin: .5rem;
 }
@@ -111,21 +110,67 @@ section:hover {
   box-shadow: 0 0 .25rem rgba(mix($color-primary, $color-shade, 25%), .1);
 }
 
-.ul.circle {
+.dt,.crcl,.sqr,.rndSqr {
   list-style-type: none;
 }
 
-// .ul.circle li::before ,
-.circle::before {
-  content:"";
+.dt li,.crcl li,
+.sqr li,.rndSqr li {
+  position: relative;
+}
+
+.sqr li::before {
+  border: 0.18em solid $color-primary;
+}
+
+.sqr li::before {
+  border: 0.18em solid $color-primary;
+  background-color: $color-primary;
+}
+
+.rndSqr li::before {
+  border-radius: .25em;
+  border: 0.18em solid $color-primary;
+}
+
+.crcl li::before {
+  border-radius: 1em;
+  border: 0.18em solid $color-primary;
+}
+
+.dt li::before {
+  border-radius: 1em;
+  border: 0.15em solid $color-primary;
+  background-color: $color-primary;
+}
+
+.dt li::before, .crcl li::before,
+.sqr li::before, .rndSqr li::before {
+  content: "";
   position: absolute;
-  left: 1rem;
-  top:0;
-  bottom: 0;
-  width: 1rem;
-  height: 1rem;
-  border-radius: .2rem;
-  border: 2px solid mix($color-primary, $color-shade, 25%);
+  left: -1.15em;
+  top: 0.15em;
+  width: 0.4em;
+  height: 0.4em;
+}
+
+
+.clrNm {
+  list-style: none;
+  counter-reset: li;
+}
+
+.clrNm li {
+  counter-increment: li;
+}
+
+
+.clrNm li::before {
+  content: counter(li);
+  color: $color-primary;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
 }
 
 
@@ -158,29 +203,34 @@ section:hover {
 
 
 
+.tbl {
+  margin: 1rem;
+}
 
+.tbl th, .tbl td {
+  padding: 1rem 2rem;
+} 
 
+.tbl th {
+  border-bottom: 1px solid mix($color-primary, $color-shade, 90%);
+  border-left: 1px solid mix($color-primary, $color-shade, 90%);
+  font-weight: bolder;
+  background-color: rgba(0,0,0,.015);
+}
 
+.tbl td {
+  border-bottom: 1px solid mix($color-primary, $color-tone, 20%);
+  border-left: 1px solid mix($color-primary, $color-tone, 20%);
+}
 
-
-
-// button, .button {
-//   font-size: 1.25rem;
-//   padding: .8rem 1.2rem;
-//   margin: .5rem;
-//   border-radius: 3px;
-//   font-size: 18px;
-//   font-weight: 700;
-//   border: none;
-//   background-color: #3c68cf;
-//   color:#fff;
-//   background-color: mix($color-primary, $color-shade, 100%);
-// }
+.tbl td:first-child, .tbl th:first-child  {
+  border-left: none;
+}
 
 .btn-outline {
   font-size: 1.25rem;
   padding: .8rem 1.2rem;
-  margin: .5rem 1.5rem 1rem 0;
+  margin: 1rem;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 700;
@@ -194,7 +244,7 @@ section:hover {
 .btn-flat {
   font-size: 1.25rem;
   padding: .8rem 1.2rem;
-  margin: .5rem 1.5rem 1rem 0;
+  margin: 1rem;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 700;
@@ -205,10 +255,11 @@ section:hover {
   text-decoration: none;
   position: relative;
 }
+
 .btn-grad {
   font-size: 1.25rem;
   padding: .8rem 1.2rem;
-  margin: .5rem 1.5rem 1rem 0;
+  margin: 1rem;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 700;
@@ -221,23 +272,17 @@ section:hover {
   position: relative;
   background-image: linear-gradient(
     .25turn,
-    mix($color-primary, $color-tint, 80%),
-    mix($color-primary, $color-tint, 90%),
-    mix($color-primary, $color-tint, 100%)
+    mix($color-primary, $color-secondary, 0%),
+    mix($color-primary, $color-secondary, 60%),
+    mix($color-primary, $color-secondary, 100%)
   );
   z-index: 1;
   border-radius: 3px;
   transition: .5s;
   text-shadow: 0 2px 2px mix($color-primary, $color-shade, 50%);
-  box-shadow: 0px .3rem .8rem rgba(mix($color-primary, $color-shade, 70%), .5);
-  box-shadow: 0.5rem 1rem 2rem rgba(175,76,23, .4);
 
   &:hover {
-    cursor: pointer;
     text-shadow: 0 .5px 1px mix($color-primary, $color-shade, 90%);
-    // box-shadow: 0px .1rem .2rem mix($color-primary, rgba($color-shade, .5), 70%);
-    box-shadow: 0px .1rem .2rem rgba(mix($color-primary, $color-shade, 70%), .5);
-    box-shadow: -.5rem 0.5rem 1rem rgba(175,76,23,.5);
   }
 
 }
@@ -254,11 +299,10 @@ section:hover {
   transition: opacity 0.6s linear;
   opacity: 0;
   background-image: linear-gradient(
-    .9turn,
-    mix($color-primary, $color-tint, 80%),
-    mix($color-primary, $color-tint, 90%),
-    mix($color-primary, $color-tint, 90%),
-    mix($color-primary, $color-tint, 100%)
+    2turn,
+    mix($color-primary, $color-secondary, 0%),
+    mix($color-primary, $color-secondary, 60%),
+    mix($color-primary, $color-secondary, 100%)
   );
 }
 
@@ -267,6 +311,15 @@ section:hover {
 }
 
 
+.btn-shadow {
+  box-shadow: 0px .3rem .8rem rgba(mix($color-primary, $color-shade, 70%), .5);
+  box-shadow: 0.5rem 1rem 2rem rgba(175,76,23, .4);
+}
+
+.btn-shadow:hover {
+  box-shadow: 0px .1rem .2rem rgba(mix($color-primary, $color-shade, 70%), .5);
+  box-shadow: -.5rem 0.5rem 1rem rgba(175,76,23,.5);
+}
 
 
 

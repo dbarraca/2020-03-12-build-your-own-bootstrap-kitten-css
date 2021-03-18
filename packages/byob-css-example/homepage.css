@@ -1,0 +1,141 @@
+section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0 6rem 3rem;
+}
+
+#ScreenshotTemp {
+background-color:#DDD;
+border-radius: .1rem 1rem;
+border-radius: .15rem 1rem;
+max-width: 600px;
+width: 100%;
+background-image: url("./img/Webpage.PNG");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+border: 1px solid #BBB;
+}
+
+.CreatorImg {
+background-color:#DDD;
+border-radius: 1rem .15rem;
+height: 20rem;
+width: 15rem;
+max-width: 100%;
+background-image: url("./img/creator.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.content {
+display: flex;
+flex-flow: row;
+margin: 0 auto;  
+padding: 5rem 0;
+max-width: 1200px;
+}
+
+.content-text {
+padding-right: 4rem;
+max-width: 40rem;
+font-size: 1.5rem;
+}
+
+.content-text h1 {
+font-size: 4rem;
+}
+
+.content-text p {
+margin-top: 2rem;
+margin-right: 3rem;
+min-width: 30rem;
+}
+
+#Explainer .content-text {
+max-width: none;
+}
+
+#Explainer .content-text code { 
+background-color: #118bee15;
+font-size: 1rem;
+}
+
+.componentsContainer {
+max-width: 1060px;
+width: 100%;
+}
+
+.comp h3 ::before {
+content:"";
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 25%;
+background-color:#21affa;
+display: block;
+}
+
+.comp h3 {
+font-weight: bold;
+border-bottom: 2px solid #EEE;
+padding-bottom: .5rem;
+}
+
+.comp h4 {
+font-weight: 600;
+}
+
+.comp h3, .comp h4 {
+margin: 2rem .5rem 1rem;
+}
+
+.comp {
+padding: 1rem;
+border: 1px solid #E0E0E0;
+margin: 1rem;
+}
+
+.comp-example {
+border: 1px solid #EEE;
+padding: 2rem;
+background-color: #FFF;
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+}
+
+.comp-details {
+margin: 1rem;
+}
+
+.comp-code {
+padding: 1rem 3rem;
+border-radius: .5rem;
+background-color: rgba(0,0,0,.04);
+color: mediumblue;
+margin: 1rem;
+}
+
+.flx-rw div, .flx-cl div,
+.flx-rw-rv div, .flx-cl-rv div {
+padding: 1rem;
+background-color: #21affa;
+margin: 1rem;
+border-radius: .5rem;
+color: #FFF;
+font-weight: bold;
+font-size: 2rem;
+}
+
+.WebpageExample {
+border: 1px solid #E0E0E0;
+padding: 1rem;
+background-color: #FFF;
+width: 100%;
+}
