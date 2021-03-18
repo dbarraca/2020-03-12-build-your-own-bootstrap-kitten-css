@@ -4,34 +4,389 @@
 
 html {
   font-size: $font-size-baseline;
+  font-family: $font-family;
 }
 
-h1 {
-  color: mix($color-primary, $color-secondary, 0%);
-  font-size: 3rem;
+* {
+  transition: .3s;
 }
 
-h2 {
-  color: mix($color-primary, $color-secondary, 20%);
-  font-size: 2.4rem;
+body {
+  background-image: url("../img/creampaper_bw.png");
+  background-repeat: repeat;
+  font-size: 16px;
+  // padding-top: 
 }
 
-h3 {
-  color: mix($color-primary, $color-secondary, 40%);
-  font-size: 2rem;
+header, .header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  // max-width: 1000px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  // font-size: 1.2rem;
+  background-color: mix(complement($color-primary), $color-tint, 2%);
+  padding: 0;
 }
-h4 {
-  color: mix($color-primary, $color-secondary, 60%);
-  font-size: 1.65rem;
+
+header.fixed, .header.fixed {
+  background-color: #fbfdff;
+  // position: fixed;
+  width: 100%;
+  background-color: mix(complement($color-primary), $color-tint, 2%);
+  box-shadow: 0 0 .5rem rgba(mix($color-primary, $color-shade, 25%), .1);
+  z-index: 1000;
 }
-h5 {
-  color: mix($color-primary, $color-secondary, 80%);
+
+nav, .nav {
+  padding: 0 2rem;
+  // font-size: 1.1rem;
+  font-size: 1rem;
+  // border-bottom: 2px solid mix(complement($color-primary), $color-tint, 25%);
+  border-bottom: 1px solid mix($color-primary, $color-shade, 80%);
+  margin-bottom: .75rem;
+  padding: 0;
+}
+
+nav ul, .nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: .5rem;
+}
+
+nav li, .nav li {
+  list-style: none;
+  margin: 1rem;
+}
+
+.brand, 
+nav li a, .nav li a {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: .6rem 1rem;
+  color: mix($color-primary, $color-shade, 100%);
+  text-align: center;
+}
+
+.brand {
+  font-size: 1.2rem;
+  margin-right: 3rem;
+  font-weight: bold;
+  border: 3px solid;
+  border-radius: 8px;
+  margin: .75rem 6rem .75rem 2rem;
+}
+
+.brand:hover {
+  background-color: mix($color-primary, $color-shade, 90%);
+  background-color: mix($color-primary, $color-tint, 80%);
+  color: #FFF;
+  box-shadow: 0 0 1rem inset rgba(0,0,0,.2);
+}
+
+nav li a:hover, .nav li a:hover {
+  background-color: mix($color-primary, $color-tint, 10%);
+}
+
+section {
+  min-height: 80vh;
+  transition: background-color 1s, box-shadow .2s;
+  // background-color: rgba(mix($color-primary, $color-tint, 5%), 1);
+
+  // border: 1px solid #666;
+  // box-shadow: 0 2px .5rem rgba(0,0,0,.15);
+  // background-color: rgba(255,255,255,.5);
+}
+
+section:hover {
+  z-index: 300;
+  // box-shadow: 0 0 1rem rgba(0,0,0,.2);
+  background-color: rgba(255,255,255,.75);
+  box-shadow: 0 0 .25rem rgba(mix($color-primary, $color-shade, 25%), .1);
+}
+
+#ScreenshotTemp {
+  background-color:#DDD;
+  border-radius: .1rem 1rem;
+  border-radius: .15rem 1rem;
+  width: 80rem;
+  height: 25rem;
+  max-width: 100%;
+}
+
+.CreatorImg {
+  background-color:#DDD;
+  border-radius: 1rem;
+  height: 25rem;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  // flex-flow: row wrap;
+  flex-flow: row;
+  margin: 0 auto;  
+  padding: 5rem 0;
+  max-width: 1200px;
+}
+
+.content-text {
+  padding-right: 4rem;
+  max-width: 40rem;
   font-size: 1.5rem;
 }
-h6 {
-  color: mix($color-primary, $color-secondary, 100%);
-  font-size: 1.25rem;
+
+.content-text h1 {
+  font-size: 4rem;
 }
+
+.content-text p {
+  margin-top: 2rem;
+  margin-right: 3rem;
+  min-width: 30rem;
+}
+
+
+.flx-rw {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flx-cl {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// button, .button {
+//   font-size: 1.25rem;
+//   padding: .8rem 1.2rem;
+//   margin: .5rem;
+//   border-radius: 3px;
+//   font-size: 18px;
+//   font-weight: 700;
+//   border: none;
+//   background-color: #3c68cf;
+//   color:#fff;
+//   background-color: mix($color-primary, $color-shade, 100%);
+// }
+
+.btn-grad {
+  font-size: 1.25rem;
+  padding: .8rem 1.2rem;
+  margin: .5rem;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  // background-color: #3c68cf;
+  color:#fff;
+  // background-color: mix($color-primary, $color-shade, 100%);
+  text-decoration: none;
+
+  position: relative;
+  background-image: linear-gradient(
+    .25turn,
+    mix($color-primary, $color-tint, 80%),
+    mix($color-primary, $color-tint, 90%),
+    mix($color-primary, $color-tint, 100%)
+  );
+  z-index: 1;
+  border-radius: 3px;
+  transition: .5s;
+  text-shadow: 0 2px 2px mix($color-primary, $color-shade, 50%);
+  box-shadow: 0px .3rem .8rem rgba(mix($color-primary, $color-shade, 70%), .5);
+  box-shadow: 0.5rem 1rem 2rem rgba(175,76,23, .4);
+
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0 .5px 1px mix($color-primary, $color-shade, 90%);
+    // box-shadow: 0px .1rem .2rem mix($color-primary, rgba($color-shade, .5), 70%);
+    box-shadow: 0px .1rem .2rem rgba(mix($color-primary, $color-shade, 70%), .5);
+    box-shadow: -.5rem 0.5rem 1rem rgba(175,76,23,.5);
+  }
+
+}
+
+.btn-grad::before {
+  position: absolute;
+  border-radius: 3px;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.6s linear;
+  opacity: 0;
+  background-image: linear-gradient(
+    .9turn,
+    mix($color-primary, $color-tint, 80%),
+    mix($color-primary, $color-tint, 90%),
+    mix($color-primary, $color-tint, 90%),
+    mix($color-primary, $color-tint, 100%)
+  );
+}
+
+.btn-grad:hover::before {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// h1 {
+//   color: mix($color-primary, $color-secondary, 0%);
+//   font-size: 3rem;
+// }
+
+// h2 {
+//   color: mix($color-primary, $color-secondary, 20%);
+//   font-size: 2.4rem;
+// }
+
+// h3 {
+//   color: mix($color-primary, $color-secondary, 40%);
+//   font-size: 2rem;
+// }
+// h4 {
+//   color: mix($color-primary, $color-secondary, 60%);
+//   font-size: 1.65rem;
+// }
+// h5 {
+//   color: mix($color-primary, $color-secondary, 80%);
+//   font-size: 1.5rem;
+// }
+// h6 {
+//   color: mix($color-primary, $color-secondary, 100%);
+//   font-size: 1.25rem;
+// }
+
+
+
+
+
+
+/*****   Mobile   ****/
+@media only screen and (max-width: 600px) {
+  header, .header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav, nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul, .nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav li, .nav li {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav li a, .nav li a {
+    border-radius: 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid mix($color-primary, $color-shade, 100%);
+  }
+
+  section, .section {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .content {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: center;
+  }
+  
+  .content-text {
+    padding-right: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .content-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .content-text p {
+    /* margin-top: 2rem; */
+    margin-right: 0;
+  }
+  button, .button {
+    margin: 2rem auto;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
 
 .card {
   border: 2px solid #2d2d2d;
@@ -43,4 +398,76 @@ h6 {
     background-color: #eeeeee;
     cursor: pointer;
   }
+}
+
+
+
+
+
+
+
+// DB - below should be removed
+.btn {
+  background-color: #374EB3;
+  border: none;
+  color: #FFF;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  transition: .3s;
+  // box-shadow: 1px 2px 4px #333;
+  box-shadow: 0px 8px 12px rgba(138,149,158, 1);
+  // box-shadow: 1px 2px 4px #5C6369;
+
+
+  // text-shadow: 2px 2px 4px #333;
+
+  &:hover {
+    background-color: pink;
+    // background:  radial-gradient(ellipse at bottom, #4d9f0c, transparent), 
+    // radial-gradient(ellipse at top, #e66465, transparent);
+    cursor: pointer;
+    // border-radius: 8px;
+  }
+}
+
+.gradient {
+  position: relative;
+  // background: radial-gradient(
+  //   #007bff,
+  //   #cde5ff,
+  //   #4da3ff
+  // );
+  background-image: linear-gradient(
+    to right bottom,
+    #cde5ff,
+    #4da3ff,
+    #4da3ff,
+    #007bff
+  );
+  z-index: 1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to left bottom,
+    #cde5ff,
+    #4da3ff,
+    #4da3ff,
+    #007bff
+  );
+  z-index: -1;
+  transition: opacity 0.6s linear;
+  opacity: 0;
+}
+
+.gradient:hover::before {
+  opacity: 1;
 }
