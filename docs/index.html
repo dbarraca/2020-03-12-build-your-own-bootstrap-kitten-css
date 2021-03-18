@@ -1,4 +1,113 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Voila CSS</title><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"><link href="%27.%27/homepage.9d1cea81.css" rel="stylesheet"><link rel="stylesheet" href="%27.%27/byob-css-example.af343e59.css"></head><body> <header class="hdr"> <a href="#" class="brnd">Voila</a> <nav class="nv"> <ul> <li><a href="#ATF">Home</a></li> <li><a href="#Explainer">Explanation</a></li> <li><a href="#Creator">Creator</a></li> <li><a href="#KitchenSink">Kitchen Sink</a></li> <li><a href="#Components">Components</a></li> <li><a href="#Examples">Examples</a></li> </ul> </nav> </header> <section id="ATF"> <div class="content"> <div class="content-text"> <h1>Voila</h1> <p>Voila is a CSS framework that will help you quickly cook up your next project.</p> <a class="btn-grad btn-shadow" href="https://github.com/dbarraca/2020-03-12-build-your-own-bootstrap-kitten-css" target="_blank">GitHub</a> <a href="https://raw.githubusercontent.com/dbarraca/2020-03-12-build-your-own-bootstrap-kitten-css/main/docs/byob-css-example.e31bb0bc.css" download="" target="_blank"> <button class="btn-outline btn-shadow">Download</button> </a> </div> <img src="%27.%27/Webpage.12e0feb1.png" id="ScreenshotTemp"> </div> </section> <section id="Explainer"> <div class="content"> <div class="content-text"> <h2>How to use Voila CSS</h2> <p>Voila is a css framework with ready made components. You simply need to download the <a href="https://raw.githubusercontent.com/dbarraca/2020-03-12-build-your-own-bootstrap-kitten-css/main/docs/byob-css-example.e31bb0bc.css" download="" target="_blank">Voila css</a> file and include the css file in your head tag. Then you can add the needed classes to your html to create each component.The available components can be found in the <a href="#KitchenSink">kitchen sink</a> section below. Just like that you will be yelling out "Voila!" as you look upon the beautiful website you have created. </p> <p>Also, include this css font file from Google fonts to have the Montserrat file family.</p> <code><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></code> </div> </div> </section> <section id="Creator"> <div class="content"> <div class="content-text"> <h2>Meet the creator</h2> <p>Daniel Barraca is a Full-stack software engineer who loves to dabble in UI design. He is currently working with UC Davis and the California Tobacco Control Program.</p> <p>This CSS framework was build during one of <a href="https://www.mintbean.io/">MintBeans</a> Hackathons. Check them out to find a community of great developers and a place to learn web development.</p> <a href="https://www.mintbean.io/" target="_blank" class="btn-grad btn-shadow"> MintBeans</a> </div>  <div class="CreatorImg"></div> </div> </section> <section id="KitchenSink"> <div class="content"> <div class="content-text"> <h2>Kitchen Sink</h2>  </div> </div> <div class="componentsContainer"> <div class="comp"> <h3>Header</h3> <h4>Header with links to pages</h4> <div class="comp-example"> <header class="hdr"> <a href="#" class="brnd">brand</a> <nav class="nv"> <ul> <li><a href="#">Link 1</a></li> <li><a href="#">Link 2</a></li> <li><a href="#">Link 3</a></li> </ul> </nav> </header> </div> <div class="comp-code"> <pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voila CSS</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="./homepage.css" rel="stylesheet">
+    <link href="./kitten-example.adbff444.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="hdr">
+      <a href="#" class="brnd">Voila</a>
+      <nav class="nv">
+        <ul>
+          <li><a href="#ATF">Home</a></li>
+          <li><a href="#Explainer">Explanation</a></li>
+          <li><a href="#Creator">Creator</a></li>
+          <li><a href="#KitchenSink">Kitchen Sink</a></li>
+          <li><a href="#Components">Components</a></li>
+          <li><a href="#Examples">Examples</a></li>
+        </ul> 
+      </nav>
+    </header>
+
+    <section id="ATF">
+      <div class="content">
+        <div class="content-text">
+          <h1>Voila</h1>
+
+          <p>Voila is a CSS framework that will help you quickly cook up your next project.</p>
+
+          <a class="btn-grad btn-shadow" href="https://github.com/dbarraca/2020-03-12-build-your-own-bootstrap-kitten-css" target="_blank">GitHub</a>
+
+          <a href="./kitten-example.adbff444.css" download target="_blank">
+            <button class="btn-outline btn-shadow">Download</button>
+          </a>
+        </div>
+
+        <img src="./img/Webpage.png" id="ScreenshotTemp">
+      </div>
+    </section>
+
+    <section id="Explainer">
+      <div class="content">
+        <div class="content-text">
+          <h2>How to use Voila CSS</h2>
+
+          <p>Voila is a css framework with ready made components. You simply need to download the 
+            <a href="./kitten-example.adbff444.css" download target="_blank">Voila css</a> 
+            file and include the css file in your head tag. 
+            Then you can add the needed classes to your html to create each component. The available components can be found in the 
+            <a href="#KitchenSink">kitchen sink</a> section below. Just like that you will be yelling out "Voila!" as you look upon the beautiful 
+            website you have created. </p>
+          <p>Also, include this css font file from Google fonts to have the Montserrat file family.</p>
+          <code><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></code>
+        </div>
+      </div>
+    </section>
+
+    <section id="Creator">
+      <div class="content">
+        <div class="content-text">
+          <h2>Meet the creator</h2>
+
+          <p>Daniel Barraca is a Full-stack software engineer who loves to dabble in UI design. He is currently working with UC Davis and the California Tobacco Control Program.</p>
+
+          <p>This CSS framework was build during one of <a href="https://www.mintbean.io/">MintBeans</a> Hackathons. Check them out to find a community of great developers and a place to learn web development.</p>
+
+          <a href="https://www.mintbean.io/" target="_blank" class="btn-grad btn-shadow"> MintBeans</a>
+        </div>
+
+        <!-- <img src=""> -->
+
+        <div class="CreatorImg"></div>
+      </div>
+    </section>
+
+    <section id="KitchenSink">
+      <div class="content">
+        <div class="content-text">
+          <h2>Kitchen Sink</h2>
+
+          <!-- <p>For the 5 star chef with precise taste.</p> -->
+        </div>
+      </div>
+
+      <div class="componentsContainer">
+        <div class="comp">
+          <h3>Header</h3>
+          
+          <h4>Header with links to pages</h4>
+          <div class="comp-example">
+            <header class="hdr">
+              <a href="#" class="brnd">brand</a>
+              <nav class="nv">
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul> 
+              </nav>
+            </header>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <header class="hdr">
   <a href="#" class="brnd">brand</a>
@@ -11,13 +120,43 @@
   </nav>
 </header>
               </code>
-            </pre> </div> <h4>Header with no links to pages</h4> <div class="comp-example"> <header class="hdr"> <a href="#" class="brnd">brand</a> </header> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+          <h4>Header with no links to pages</h4>
+          <div class="comp-example">
+              <header class="hdr">
+                <a href="#" class="brnd">brand</a>
+              </header>
+          </div>
+
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <header class="hdr">
   <a href="#" class="brnd">brand</a>
 </header>
               </code>
-            </pre> </div> </div> <div class="comp"> <h3>Ordered list</h3> <div class="comp-example"> <ol class="clrNm"> <li>List Item</li> <li>List Item</li> <li>List Item</li> </ol> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+        </div>
+
+       
+
+
+
+        <div class="comp">
+          <h3>Ordered list</h3>
+          <div class="comp-example">
+            <ol class="clrNm">
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ol>
+          </div>
+
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <ol class="clrNm">
   <li>List Item</li>
@@ -25,7 +164,26 @@
   <li>List Item</li>
 </ol>
               </code>
-            </pre> </div> </div> <div class="comp"> <h3>Unordered Lists</h3> <div class="comp-details"> <p>Unordered Lists</p> </div> <h4>Dot Bulletpoint Unordered Lists</h4> <div class="comp-example"> <ul class="dt"> <li>List Item</li> <li>List Item</li> <li>List Item</li> </ul> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+        </div>
+
+        <div class="comp">
+          <h3>Unordered Lists</h3>
+          <div class="comp-details">
+            <p>Unordered Lists</p>
+          </div>
+
+          <h4>Dot Bulletpoint Unordered Lists</h4>
+          <div class="comp-example">
+            <ul class="dt">
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <ul class="dt">
   <li>List Item</li>
@@ -33,7 +191,20 @@
   <li>List Item</li>
 </ul>
               </code>
-            </pre> </div> <h4>Circle Bulletpoint Unordered Lists</h4> <div class="comp-example"> <ul class="crcl"> <li>List Item</li> <li>List Item</li> <li>List Item</li> </ul> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+
+          <h4>Circle Bulletpoint Unordered Lists</h4>
+          <div class="comp-example">
+            <ul class="crcl">
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <ul class="crcl">
   <li>List Item</li>
@@ -41,7 +212,19 @@
   <li>List Item</li>
 </ul>
               </code>
-            </pre> </div> <h4>Square Bulletpoint Unordered Lists</h4> <div class="comp-example"> <ul class="sqr"> <li>List Item</li> <li>List Item</li> <li>List Item</li> </ul> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+          <h4>Square Bulletpoint Unordered Lists</h4>
+          <div class="comp-example">
+            <ul class="sqr">
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <ul class="sqr">
   <li>List Item</li>
@@ -49,7 +232,19 @@
   <li>List Item</li>
 </ul>
               </code>
-            </pre> </div> <h4>Rounded Square Bulletpoint Unordered Lists</h4> <div class="comp-example"> <ul class="rndSqr"> <li>List Item</li> <li>List Item</li> <li>List Item</li> </ul> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+          <h4>Rounded Square Bulletpoint Unordered Lists</h4>
+          <div class="comp-example">
+            <ul class="rndSqr">
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <ul class="rndSqr">
   <li>List Item</li>
@@ -57,7 +252,24 @@
   <li>List Item</li>
 </ul>
               </code>
-            </pre> </div> </div> <div class="comp"> <h3>Flex Containers</h3> <h4>Flex Row</h4> <div class="comp-example"> <div class="flx-rw"> <div>div 1</div> <div>div 2</div> <div>div 3</div> </div> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+        </div>
+
+        <div class="comp">
+          <h3>Flex Containers</h3>
+
+          <h4>Flex Row</h4>
+          <div class="comp-example">
+            <div class="flx-rw">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+          
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <div class="flx-rw">
   <div>div 1</div>
@@ -65,7 +277,22 @@
   <div>div 3</div>
 </div>
               </code>
-            </pre> </div> <h4>Flex Row Reverse</h4> <div class="comp-example"> <div class="flx-rw-rv"> <div>div 1</div> <div>div 2</div> <div>div 3</div> </div> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+       
+ 
+          <h4>Flex Row Reverse</h4>
+
+          <div class="comp-example">
+            <div class="flx-rw-rv">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+          
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
   <div class="flx-rw-rv">
   <div>div 1</div>
@@ -73,7 +300,21 @@
   <div>div 3</div>
   </div>
               </code>
-            </pre> </div> <h4>Flex Column</h4> <div class="comp-example"> <div class="flx-cl"> <div>div 1</div> <div>div 2</div> <div>div 3</div> </div> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+          <h4>Flex Column</h4>
+
+          <div class="comp-example">
+            <div class="flx-cl">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+         
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <div class="flx-cl">
   <div>div 1</div>
@@ -81,7 +322,21 @@
   <div>div 3</div>
 </div>
               </code>
-            </pre> </div> <h4>Flex Column Reverse</h4> <div class="comp-example"> <div class="flx-rw-rv"> <div>div 1</div> <div>div 2</div> <div>div 3</div> </div> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+          <h4>Flex Column Reverse</h4>
+
+          <div class="comp-example">
+            <div class="flx-rw-rv">
+              <div>div 1</div>
+              <div>div 2</div>
+              <div>div 3</div>
+            </div>
+          </div>
+          
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
   <div class="flx-cl-rv">
     <div>div 1</div>
@@ -89,7 +344,52 @@
     <div>div 3</div>
   </div>
               </code>
-            </pre> </div> </div>  <div class="comp"> <h4>Tables</h4> <div class="comp-example"> <table class="tbl"> <tr> <th>Sport</th> <th>Athletes</th> <th>Teams</th> </tr> <tr> <td>Hockey</td> <td>Wayne Gretzky</td> <td>Indianapolis Racers</td> </tr> <tr> <td>Basketball</td> <td>Bugs Bunny</td> <td>Looney Tunes</td> </tr> <tr> <td>Football</td> <td>Brett Favre</td> <td>Green Bay Packers</td> </tr> </table> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+        </div>
+          
+      <!--
+        <div class="comp">
+          <h3>Cards</h3>
+          <div class="comp-example">
+          </div>
+          <div class="comp-code">
+            <pre>
+              <code class="language-html" data-lang="html">
+              </code>
+            </pre>
+          </div>
+        </div>
+      -->
+
+        <div class="comp">
+          <h4>Tables</h4>
+          <div class="comp-example">
+            <table class="tbl">
+              <tr>
+                <th>Sport</th>
+                <th>Athletes</th>
+                <th>Teams</th>
+              </tr>
+              <tr>
+                <td>Hockey</td>
+                <td>Wayne Gretzky</td>
+                <td>Indianapolis Racers</td>
+              </tr>
+              <tr>
+                <td>Basketball</td>
+                <td>Bugs Bunny</td>
+                <td>Looney Tunes</td>
+              </tr>
+              <tr>
+                <td>Football</td>
+                <td>Brett Favre</td>
+                <td>Green Bay Packers</td>
+              </tr>
+            </table>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <table class="tbl">
   <tr>
@@ -109,22 +409,153 @@
   </tr>
 </table>
               </code>
-            </pre> </div> </div> <div class="comp"> <h3>Buttons</h3> <h4>Default Button</h4> <div class="comp-example"> <button class="btn-flat">button</button> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+        </div>
+
+        <div class="comp">
+          <h3>Buttons</h3>
+
+          <h4>Default Button</h4>          
+          <div class="comp-example">
+            <button class="btn-flat">button</button>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
 <button class="btn-flat">button</button>
               </code>
-            </pre> </div> <h4>Outline Buttons</h4> <div class="comp-example"> <button class="btn-outline">button</button> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+          <h4>Outline Buttons</h4>
+          <div class="comp-example">
+            <button class="btn-outline">button</button>
+          </div>
+          <div class="comp-code">
+            <pre>
               <code class="language-html" data-lang="html">
   <button class="btn-outline">button</button>
               </code>
-            </pre> </div> <h4>Gradient Buttons</h4> <div class="comp-example"> <button class="btn-grad">button</button> </div> <div class="comp-code"> <pre>
+            </pre>
+          </div>
+
+            <h4>Gradient Buttons</h4>
+            <div class="comp-example">
+              <button class="btn-grad">button</button>
+            </div>
+            <div class="comp-code">
+              <pre>
                 <code class="language-html" data-lang="html">
   <button class="btn-grad">button</button>
                 </code>
-              </pre> </div> <h4>Buttons with a shadow</h4> <div class="comp-example"> <button class="btn-flat btn-shadow">button</button> <button class="btn-outline btn-shadow">button</button> <button class="btn-grad btn-shadow">button</button> </div> <div class="comp-code"> <pre>
+              </pre>
+            </div>
+
+            <h4>Buttons with a shadow</h4>
+            <div class="comp-example">
+              <button class="btn-flat btn-shadow">button</button>
+              <button class="btn-outline btn-shadow">button</button>
+              <button class="btn-grad btn-shadow">button</button>
+            </div>
+            <div class="comp-code">
+              <pre>
                 <code class="language-html" data-lang="html">
 <button class="btn-flat btn-shadow">button</button>
 <button class="btn-outline btn-shadow">button</button>
 <button class="btn-grad btn-shadow">button</button>
                 </code>
-              </pre> </div> </div> </div>  </section> <section id="Examples"> <div class="content"> <div class="content-text"> <h2>Example Website</h2> </div> </div> <div class="WebpageExample"> <header class="hdr"> <a href="#" class="brnd">brand</a> <nav class="nv"> <ul> <li><a href="#">Home</a></li> <li><a href="#">Explore</a></li> <li><a href="#">Pricing</a></li> <li><a href="#">About Us</a></li> </ul> </nav> </header> <section> <div class="flx-cl"> <table class="tbl"> <tr> <th>Sport</th> <th>Athletes</th> <th>Teams</th> <th></th> </tr> <tr> <td>Hockey</td> <td>Wayne Gretzky</td> <td> <ul class="dt"> <li>Indianapolis Racers</li> <li>Edmonton Oilers</li> <li>Los Angeles Kings</li> </ul> </td> <td><button class="btn-outline">Delete</button></td> </tr> <tr> <td>Basketball</td> <td>Bugs Bunny</td> <td>Looney Tunes</td> <td><button class="btn-outline">Delete</button></td> </tr> <tr> <td>Football</td> <td>Brett Favre</td> <td> <ol class="clrNm"> <li>Atlanta Falcons (1991)</li> <li>Green Bay Packers (1992–2007)</li> <li>New York Jets (2008) </li> <li>Minnesota Vikings (2009–2010)</li>  </ol></td> <td><button class="btn-outline">Delete</button></td> </tr> </table> </div> <div class="flx-rw"> <button class="btn-grad btn-shadow">Add Athlete</button> <button class="btn-flat btn-shadow">Print Table</button> </div> </section> </div> </section> <section id="Customization"> <div class="content"> <div class="content-text"> <h2>Customization coming soon</h2>  </div> </div> </section> <script src="%27.%27/byob-css-example.1d767a91.js"></script> </body></html>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+   <section id="Examples">
+      <div class="content">
+        <div class="content-text">
+          <h2>Example Website</h2>
+        </div>
+      </div>
+
+      <div class="WebpageExample">
+        <header class="hdr">
+          <a href="#" class="brnd">brand</a>
+          <nav class="nv">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul> 
+          </nav>
+        </header>
+
+        <section>
+          <div class="flx-cl">
+            <table class="tbl">
+              <tr>
+                <th>Sport</th>
+                <th>Athletes</th>
+                <th>Teams</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Hockey</td>
+                <td>Wayne Gretzky</td>
+                <td>
+                  <ul class="dt">
+                    <li>Indianapolis Racers</li> 
+                    <li>Edmonton Oilers</li>
+                    <li>Los Angeles Kings</li>
+                  </ul>
+                </td>
+                <td><button class="btn-outline">Delete</button></td>
+              </tr>
+              <tr>
+                <td>Basketball</td>
+                <td>Bugs Bunny</td>
+                <td>Looney Tunes</td>
+                <td><button class="btn-outline">Delete</button></td>
+              </tr>
+              <tr>
+                <td>Football</td>
+                <td>Brett Favre</td>
+                <td>
+                  <ol class="clrNm">
+                    <li>Atlanta Falcons (1991)</li>
+                    <li>Green Bay Packers (1992–2007)</li>
+                    <li>New York Jets (2008) </li>
+                    <li>Minnesota Vikings (2009–2010)</li>
+                  </0l> 
+                </td>
+                <td><button class="btn-outline">Delete</button></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="flx-rw">
+            <button class="btn-grad btn-shadow">Add Athlete</button>
+            <button class="btn-flat btn-shadow">Print Table</button>
+          </div>
+       </section>
+      </div>
+    </section>
+
+
+    <section id="Customization">
+      <div class="content">
+        <div class="content-text">
+          <h2>Customization coming soon</h2>
+
+          <!--<p>In order to customize Voila, you can download the full project from the <a href="https://github.com/dbarraca/2020-03-12-build-your-own-bootstrap-kitten-css" target="_blank">Github repo</a>. You can change the colors through the css by changing the color-primary and color-secondary in the <a href="https://github.com/dbarraca/2020-03-12-build-your-own-bootstrap-kitten-css/blob/main/packages/byob-css/src/_variables.scss" target="_blank"></a>_variables.scss file. </p>--->
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
