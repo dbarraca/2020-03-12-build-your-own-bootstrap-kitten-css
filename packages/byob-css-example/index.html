@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Voila CSS</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -306,7 +306,7 @@
     <section id="Components">
       <div class="content">
         <div class="content-text">
-          <h2>Components</h2>
+          <h2>Components</h2> 
 
           <p>For the developer on the go. Use the pre-built Voila's pre-built components by copying </p>
 
@@ -335,6 +335,14 @@
       </div>
     </section>
 
-    <script src="index.js"></script>
+    <script>
+      let compCode = document.querySelectorAll('code');
+
+      compCode.forEach((code) => {
+      //   console.log(code);
+        let replaced = code.innerHTML.replaceAll('<','&lt;').replaceAll('>','&gt;');
+        code.innerHTML = replaced;
+      }
+    </script>
   </body>
 </html>
