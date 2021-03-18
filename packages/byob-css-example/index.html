@@ -306,7 +306,7 @@
     <section id="Components">
       <div class="content">
         <div class="content-text">
-          <h2>Components</h2> 
+          <h2>Components</h2>
 
           <p>For the developer on the go. Use the pre-built Voila's pre-built components by copying </p>
 
@@ -335,14 +335,7 @@
       </div>
     </section>
 
-    <script>
-      let compCode = document.querySelectorAll('code');
-
-      compCode.forEach((code) => {
-      //   console.log(code);
-        let replaced = code.innerHTML.replaceAll('<','&lt;').replaceAll('>','&gt;');
-        code.innerHTML = replaced;
-      }
-    </script>
+    <script src="index.js"></script>
+    
   </body>
 </html>
