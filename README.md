@@ -1,5 +1,5 @@
 
-[Voila CSS](https://dbarraca.github.io/2020-03-12-build-your-own-bootstrap-kitten-css/)
+[Voila CSS](https://dbarraca.github.io/Voila-CSS/)
 
 # MintBean
 
